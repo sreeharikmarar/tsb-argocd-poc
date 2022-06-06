@@ -25,12 +25,12 @@ kind: Group
 metadata:
   annotations: 
     tsb.tetrate.io/organization: tetrate
-    tsb.tetrate.io/tenant: transaction
+    tsb.tetrate.io/tenant: content
     tsb.tetrate.io/workspace: blogger-ws
   name: blogger-security
 spec:
   displayName: blogger-security-group
   namespaceSelector:
     names:
-      - "cp-cluster-1/transaction"
+      - "cp-cluster-1/content"
   configMode: BRIDGED
