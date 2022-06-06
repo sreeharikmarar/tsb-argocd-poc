@@ -1,0 +1,11 @@
+apiVersion: tsb.tetrate.io/v2
+kind: Workspace
+metadata:
+  annotations: 
+    tsb.tetrate.io/organization: tetrate
+    tsb.tetrate.io/tenant: content
+  name: blogger-ws
+spec:
+  namespaceSelector:
+    names:
+      - "cp-cluster-1/content"

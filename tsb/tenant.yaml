@@ -1,0 +1,8 @@
+apiVersion: tsb.tetrate.io/v2
+kind: Tenant
+metadata:
+  name: content
+  annotations: 
+    tsb.tetrate.io/organization: tetrate
+spec:
+  displayName: Content
