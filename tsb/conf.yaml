@@ -1,5 +1,20 @@
 ---
 apiVersion: tsb.tetrate.io/v2
+kind: OrganizationSetting
+metadata:
+  name: tetrate-settings
+  annotations: 
+    tsb.tetrate.io/organization: tetrate
+spec:
+  defaultSecuritySetting:
+    authenticationSettings:
+      trafficMode: REQUIRED
+    authorization:
+      mode: CUSTOM
+    propagationStrategy: STRICTER
+  displayName: tetrate-settings
+---
+apiVersion: tsb.tetrate.io/v2
 kind: Tenant
 metadata:
   name: content
