@@ -24,6 +24,27 @@ spec:
   displayName: Content
 ---
 apiVersion: tsb.tetrate.io/v2
+kind: TenantSetting
+metadata:
+  name: default-setting
+  annotations:
+    tsb.tetrate.io/organization: tetrate
+    tsb.tetrate.io/tenant: content
+spec:
+  defaultSecuritySetting:
+    authenticationSettings:
+      trafficMode: REQUIRED
+    authorization:
+      mode: CUSTOM
+      serviceAccounts:
+      - content/*
+    displayName: default-setting
+    propagationStrategy: STRICTER
+  defaultTrafficSetting:
+    displayName: default-setting
+  displayName: default-setting
+---
+apiVersion: tsb.tetrate.io/v2
 kind: Workspace
 metadata:
   annotations: 
